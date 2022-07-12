@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.ActiveMethods"
+             Title="Métodos Ativos"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White"
+             xmlns:viewModels="clr-namespace:VersalityApp.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModels:ActiveMethodsViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,20" x:Name="gesture" >
+                <CollectionView ItemsSource="{Binding Methods}" x:Name="collection">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid RowDefinitions="*,*,*">
+                                <Label Text="{Binding Name}" Grid.Row="0" FontFamily="PoppinsBold"/>
+                                <Label Text="{Binding Description}" Grid.Row="1" />
+                                <Label Text="Leia Mais" Grid.Row="2" TextColor="#FFA500" FontFamily="PoppinsMedium">
+                                    <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.NavigateCommand, Source={x:Reference collection}}" CommandParameter="{Binding ButtonLeiaMais}"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

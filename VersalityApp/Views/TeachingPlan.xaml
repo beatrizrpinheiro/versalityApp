@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.TeachingPlan"
+             xmlns:controls="clr-namespace:VersalityApp"
+             Title="Planos de Ensino"
+             Shell.BackgroundColor="#FFA500"
+             xmlns:viewModels="clr-namespace:VersalityApp.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModels:TeachingPlanViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Frame Padding="0" Margin="10" BackgroundColor="White" HasShadow="True" BorderColor="Grey" CornerRadius="15" HeightRequest="35">
+            <SearchBar Placeholder="Digite o nome da sua disciplina" CancelButtonColor="#FFA500" BackgroundColor="Transparent"/>
+        </Frame>
+        <!--<Button Text="CHAMAR" Command="{Binding GenerateFile}"/>-->
+    </StackLayout>
+
+</ContentPage>
+
+    

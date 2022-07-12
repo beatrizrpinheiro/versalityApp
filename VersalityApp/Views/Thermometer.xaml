@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.Thermometer"
+             Title="Termomêtro de Sala"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+
+    <ContentPage.Resources>
+        <Style x:Key="YellowButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#FFA500" />
+            <Setter Property="TextColor" Value="#292929" />
+            <Setter Property="ContentLayout" Value="Left, 10" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="CornerRadius" Value="30" />
+        </Style>
+    </ContentPage.Resources>
+
+
+    <StackLayout Margin="20,20" Padding="10">
+        <Grid RowDefinitions="Auto,Auto, Auto,Auto,Auto,Auto,200">
+            <StackLayout Grid.Row="0">
+                <Label Text="Data da Aula:" FontAttributes="Bold" FontFamily="PoppinsMedium" Grid.Row="0" FontSize="17"/>
+            <Grid Margin="0,20">
+                <Frame Opacity="0.1" BackgroundColor="White" CornerRadius="5" />
+                <DatePicker Grid.Row="1" BackgroundColor="Transparent"/>
+            </Grid>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Padding="0,50">
+                <Label Text="Relato:" FontAttributes="Bold" Grid.Row="2" FontSize="17" FontFamily="PoppinsMedium"/>
+                <Grid Margin="0,20"  Grid.Row="3">
+                    <Frame Opacity="0.1" BackgroundColor="White" CornerRadius="5" HeightRequest="100"/>
+                    <Entry Text="Observações sobre minha sala de aula" Keyboard="Text" FontAttributes="None"  Grid.Row="3" BackgroundColor="Transparent"
+                          TextColor="Black"    PlaceholderColor="LightGray"/>
+                </Grid>
+            </StackLayout>
+
+            <Label Text="Escolha uma situação:" FontAttributes="Bold" Grid.Row="4" FontSize="17" FontFamily="PoppinsMedium"/>
+            <Grid Margin="0,20" Grid.Row="5">
+                <Frame Opacity="0.1" BackgroundColor="White" CornerRadius="5" />
+                <Picker x:Name="picker" Grid.Row="5" Title="Situação em sala" TitleColor="#FFA500" BackgroundColor="Transparent">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Alunos introvertidos</x:String>
+                            <x:String>Falta de atenção dos alunos</x:String>
+                            <x:String>Falta de interação grupal entre os alunos</x:String>
+                            <x:String>Indisposição dos alunos quanto ao método utilizado</x:String>
+                            <x:String>Alunos desmotivados</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Grid>
+            <Button Style="{StaticResource  YellowButton}" Text="Enviar" FontFamily="PoppinsBold" FontSize="17" FontAttributes="Bold" Grid.Row="6" TextColor="#292929"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

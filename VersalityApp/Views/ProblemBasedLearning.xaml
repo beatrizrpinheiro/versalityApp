@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.ProblemBasedLearning"
+             Title="Métodos Ativos"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+
+    <ScrollView Margin="20,20" Padding="5">
+        <StackLayout >
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*" RowSpacing="5">
+            <Label 
+            Text="Aprendizagem Baseada em Problemas" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+            <StackLayout Grid.Row="1" Padding="5">
+                <Label
+            Text="A aprendizagem baseada em problemas possui como finalidade transformar o aluno em um indivíduo qualificado para desenvolver um aprendizado conceitual, procedimental e atitudinal mediante problemas que revelam situações motivadoras em vários contextos. Basicamente, com a aplicação deste método, os problemas se transformam em insumos para que os pensamentos reflexivos ocorram e a motivação pelo encontro da solução aumente." FontFamily="PoppinsExtraLight"/>
+            </StackLayout>
+ 
+       
+            <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+            <Label Text="1. Apresentar o problema e buscar solução com conhecimentos prévios." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+            <Label Text="2. Levantar, junto aos alunos, questionamentos sobre o problema e buscar possíveis soluções para o problema." FontFamily="PoppinsExtraLight" Grid.Row="4"/>
+            <Label Text="3. Desenvolver um plano de ação e definir quem, quando, como e onde os questionamentos serão investigados." FontFamily="PoppinsExtraLight" Grid.Row="5"/>
+            <Label Text="4. Explorar questionamentos anteriores a partir da utilização dos novos conhecimentos obtidos para resolução do problema inicial." FontFamily="PoppinsExtraLight" Grid.Row="6"/>
+            <Label Text="5. Promover a autoavaliação dos alunos sobre si mesmos e sobre os demais integrantes do grupo, a fim de propor melhorias e competências necessárias para os próximos problemas a serem resolvidos. " FontFamily="PoppinsExtraLight" Grid.Row="7"/>
+        </Grid>
+    </StackLayout>
+    </ScrollView>
+
+</ContentPage>

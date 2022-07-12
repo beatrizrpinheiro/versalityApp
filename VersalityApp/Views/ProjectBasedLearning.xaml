@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.ProjectBasedLearning"
+             Title="Métodos Ativos"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+    
+
+        <StackLayout Margin="20,20" Padding="5">
+            <Grid RowDefinitions="Auto,*,*,*,*,*,*,*" RowSpacing="5">
+                <Label 
+            Text="Aprendizagem Baseada em Projetos" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+                <StackLayout Grid.Row="1" Padding="5">
+                    <Label
+            Text="A aprendizagem baseada em projetos se destina a auxiliar os alunos na aquisição de autonomia e em proporcionar consciência de que a aprendizagem é recompensadora, pois oferece respostas aos seus problemas e seus interesses de vida. Além disso, valoriza o contexto de ensino em que os alunos devem resolver situações problemas por meio da execução de projetos." FontFamily="PoppinsExtraLight"/>
+                </StackLayout>
+
+                <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+                <Label Text="1. Formar grupos de 4 a 6 alunos." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+                <Label Text="2. Definir um prazo para realização do projeto, que envolve entre 2 a 4 meses." FontFamily="PoppinsExtraLight" Grid.Row="4"/>
+                <Label Text="3. Definir, junto aos alunos, um tema para os projetos, e que esteja alinhado ao conteúdo programático do curso e/ou do componente curricular." FontFamily="PoppinsExtraLight" Grid.Row="5"/>
+                <Label Text="4. Definir as etapas do projeto, bem como os recursos que serão e poderão ser utilizados pelos alunos." FontFamily="PoppinsExtraLight" Grid.Row="6"/>
+                <Label Text="5. Compartilhamento do projeto final através da socialização dos seus resultados em sala de aula e comunidade externa, especialmente no final do semestre." FontFamily="PoppinsExtraLight" Grid.Row="7"/>
+            </Grid>
+        </StackLayout>
+</ContentPage>

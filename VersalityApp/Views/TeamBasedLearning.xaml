@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.TeamBasedLearning"
+             Title="Métodos Ativos"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+
+    <ScrollView Orientation="Vertical"  Margin="20,20" Padding="5"> 
+    <StackLayout>
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*" RowSpacing="5">
+            <Label 
+            Text="Aprendizagem Baseada em Equipes" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+            <StackLayout Grid.Row="1" Padding="5">
+                <Label
+            Text="A aprendizagem baseada em equipes tem foco na aprendizagem de adultos e possui a capacidade de estimular a disposição do alunos na busca pelo conhecimento de maneira partilhada, ou seja, com base na comunicação com outros alunos. Portanto, esse método é extretamente importante para prática também da aprendizagem cognitiva via socialização." FontFamily="PoppinsExtraLight"/>
+            </StackLayout>
+
+            <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+            <Label Text="1. O aluno deve assistir a um filme, documentário, palestra, experimento ou mesmo ler algum material sobre o assunto que será abordado em sala." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+            <Label Text="2. O professor deve aplicar um texto com questões de múltipla escola que deve ser respondido individualmente por cada membro da equipe, sem qualquer tipo de consulta a materiais externos." FontFamily="PoppinsExtraLight" Grid.Row="4"/>
+            <Label Text="3. Os alunos devem discutir os testes e cada membro deve argumeentar os motivos das suas escolhas, até que o grupo decida qual é, de fato, a melhor resposta para questão." FontFamily="PoppinsExtraLight" Grid.Row="5"/>
+            <Label Text="4. O professor deverá discutir com a sala, questão por questão, explicitar e explicar a resposta correta de cada questão, e comparar com as respostas dos alunos." FontFamily="PoppinsExtraLight" Grid.Row="6"/>
+            <Label Text="5. Cada questão do teste deve valer pontos, para que ao final da aplicação do método cada equipe tenha uma pontuação específica. " FontFamily="PoppinsExtraLight" Grid.Row="7"/>
+
+        </Grid>
+     
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

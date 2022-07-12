@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.Stad"
+             Title="Métodos Ativos"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+
+    <ScrollView Margin="20,20" Padding="5">
+        <StackLayout>
+            <Grid RowDefinitions="*,*,*,*,*,*,*,*" RowSpacing="5">
+                <Label 
+            Text="STAD" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+                <StackLayout Grid.Row="1" Padding="5">
+                    <Label
+            Text="O método de Divisão dos alunos em Equipes para o Sucesso, pertence ao grupo de métodos de aprendizagem viabiliza a construção do conhecimento por meio de grupos. Entre os grupos devem ser estipuladas relações de ajuda mútua, de modo que todos os participantes percebam sua importância e indispensabilidade" FontFamily="PoppinsExtraLight"/>
+                </StackLayout>
+
+                <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+                <Label Text="1. Aplicar um teste para cada aluno da sala, especialmente sobre um conteúdo que já tenha sido previamente estudado pelo aluno." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+                <Label Text="2. Dividir os alunos em grupos." FontFamily="PoppinsExtraLight" Grid.Row="4" VerticalTextAlignment="Center"/>
+                <Label Text="3. Cada integrante dos grupos deverá apresentar suas contribuições sobre o mesmo assunto previamente estudado e abordado nos testes individuais do passo 1." FontFamily="PoppinsExtraLight" Grid.Row="5"/>
+                <Label Text="4. Aplicar novamente os testes individuais com o intuito de avaliar se os indivíduos progrediram a partir das discussões com o seu grupo." FontFamily="PoppinsExtraLight" Grid.Row="6"/>
+                <Label Text="5. Divulgar as notas individuais e as notas do grupo para que seja possível visualizar a evolução dos alunos a partir da construção de um conhecimento cooperativo." FontFamily="PoppinsExtraLight" Grid.Row="7"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

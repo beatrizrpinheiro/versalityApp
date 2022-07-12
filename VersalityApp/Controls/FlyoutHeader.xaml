@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Controls.FlyoutHeader"
+             HeightRequest="200">
+
+    <FlexLayout BackgroundColor="#292929" >
+    <Frame BackgroundColor="Transparent" Padding="0"
+               HeightRequest="80" WidthRequest="80"
+               CornerRadius="40">
+        <Image Source="docente_teste.png"/>
+
+    </Frame>
+    <StackLayout Spacing="0" Padding="10,10,0,0">
+        <Label Text="Profa. Beatriz"
+                       FontSize="Medium"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+        <Label Text="beatriz.pinheiro@professor.edu.br" FontSize="Medium" TextColor="white"/>
+
+    </StackLayout>
+    </FlexLayout>
+</ContentView>

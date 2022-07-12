@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.TeamsGamesTournament"
+             Title="Métodos Ativos"
+                    Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+    
+    <ScrollView Orientation="Vertical"  Margin="20,20" Padding="5">
+        <StackLayout>
+            <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*" RowSpacing="5">
+                <Label 
+            Text="Torneio de Jogos em Equipes" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+                <StackLayout Grid.Row="1" Padding="5">
+                    <Label
+            Text="O método Torneio de Jogos em Equipes induz a formação de equipes de maneira heterogênea a nível de competência técnica e comportamental. É baseado num ciclo regular de atividades voltadas à aula expositiva, estudo em equipe, torneio e premiação. A diferença entre o Torneio de Jogos em Equipes do STAD é que, no primeiro, o aluno não realiza exercícios de maneira individual em nenhum momento." FontFamily="PoppinsExtraLight"/>
+                </StackLayout>
+
+                <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+                <Label Text="1. Ministrar aula expositiva." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+                <Label Text="2. Proporcionar aos alunos um tempo para estudo em grupos sobre a aula expositiva." FontFamily="PoppinsExtraLight" Grid.Row="4"/>
+                <Label Text="3. Iniciar torneio com mesas formadas por três integrantes cada." FontFamily="PoppinsExtraLight" Grid.Row="5"/>
+                <Label Text="4. Cada mesa deve receber uma planilha de perguntas e respostas, um conjunto de cartões numerados e uma ficha de mesa." FontFamily="PoppinsExtraLight" Grid.Row="6"/>
+                <Label Text="5. O primeiro aluno deve embaralhar os cartões numerados e sortear um número que corresponde a uma determinada questão, ele deverá responder essa questão, assim como os demais membros, que são chamados de desafiantes." FontFamily="PoppinsExtraLight" Grid.Row="7"/>
+                <Label Text="6. Após as respostas, o último desafiante faz a leitura da resposta correta que está na planilha de respostas e o aluno que tiver respondido corretamente ganha o cartão sorteado e pontua, caso ninguém tenha acertado o cartão volta ao monte. " FontFamily="PoppinsExtraLight" Grid.Row="8"/>
+                <Label Text="7. Quando o torneio terminar, a partir da decisão do professor ao passo que os cartões numerados se esgotarem, os alunos devem preencher a ficha de mesa informando o número de cartões adquiridos, e, portanto, a quantidade de respostas acertadas " FontFamily="PoppinsExtraLight" Grid.Row="9"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

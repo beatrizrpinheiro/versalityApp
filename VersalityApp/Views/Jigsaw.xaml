@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.Jigsaw"
+             Title="Métodos Ativos"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+
+    <ScrollView Margin="20,20" Padding="5">
+        <StackLayout>
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*" RowSpacing="5">
+            <Label 
+            Text="Jigsaw" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+            <StackLayout Grid.Row="1" Padding="5">
+                <Label
+            Text="Jigsaw é um método baseado na aprendizagem cooperativa, e é posto em prática por meio de um grupo de alunos, nos quais cada grupo elege um aluno especialista, que ficará encarregado de ensinar os demais colegas um assunto muito específico que será ensinado pelo professor diante das rodadas e etapas do método." FontFamily="PoppinsExtraLight"/>
+            </StackLayout>
+
+            <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+            <Label Text="1. Formar grupos de base (A, B, C, D) e promover a leitura de um texto." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+            <Label Text="2. Discutir o texto lido pelos grupos e distribuir questões a cerca do texto." FontFamily="PoppinsExtraLight" Grid.Row="4"/>
+            <Label Text="3. Formar grupos de especialistas, ou seja, cada grupo base deve eleger um líder. Esse líder será o aluno especialista, que formará grupo com os demais especialistas dos outros grupos de base." FontFamily="PoppinsExtraLight" Grid.Row="5"/>
+            <Label Text="4. O professor deve incentivar a discussão de cada questão nos grupos de especialistas, bem como mediar a solução para essas questões." FontFamily="PoppinsExtraLight" Grid.Row="6"/>
+            <Label Text="5. Os alunos especialistas devem retornar aos seus respectivos grupos de base e explanar, em discussão, a solução encontrada para questão junto ao grupo de especialistas. É importante variar o aluno especialista a cada rodada." FontFamily="PoppinsExtraLight" Grid.Row="7"/>
+        </Grid>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

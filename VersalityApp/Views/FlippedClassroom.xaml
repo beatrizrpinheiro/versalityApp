@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.FlippedClassroom"
+             Title="Métodos Ativos"
+                    Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+    <VerticalStackLayout Margin="20,20" Padding="5">
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*" RowSpacing="5">
+            <Label 
+            Text="Sala de Aula Invertida" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+            <StackLayout Grid.Row="1" Padding="5">
+                <Label
+            Text="Sala de aula invertida é um método que que se baseia na modalidade de aprendizagem eletrônica, isto é, o conteúdo e as orientações são fornecidas por vídeos e mateiais presentes em sistemas de informação, que somente devem ser acessados de maneira online por algum aparelho eletrônico." FontFamily="PoppinsExtraLight"/>
+            </StackLayout>
+
+
+            <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+            <Label Text="1. Disponibilizar vídeos, estudos de caso e textos, de no máximo 4 laudas, para serem estudados virtualmente pelos alunos." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+            <Label Text="2. Reduzir tempo de exposição teórica em sala de aula e aplicar debates, projetos, simulação de situações problemas enfrentadas pela profissão no dia a dia" FontFamily="PoppinsExtraLight" Grid.Row="4"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

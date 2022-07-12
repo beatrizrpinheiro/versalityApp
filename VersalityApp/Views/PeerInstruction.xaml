@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VersalityApp.Views.PeerInstruction"
+             Title="Métodos Ativos"
+             Shell.BackgroundColor="#FFA500"
+             BackgroundColor="White">
+
+    <ScrollView Orientation="Vertical"  Margin="20,20" Padding="5">
+        <StackLayout>
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*" RowSpacing="5">
+            <Label 
+            Text="Instrução por Pares" FontFamily="PoppinsBold" TextColor="#292929" FontSize="23"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0"/>
+
+            <StackLayout Grid.Row="1" Padding="5">
+                <Label
+            Text="O método de Instrução por Pares tem como foco a aprendizagem colaborativa  e estimula a participação dos alunos por meio de uma aprendizagem que ocorre pelos próprios alunos. É um método que visa explorar o conhecimento empírico dos alunos e questionamentos que podem surgir tanto de maneira individual como coletiva." FontFamily="PoppinsExtraLight"/>
+            </StackLayout>
+
+
+            <Label Text="Passo a Passo" TextColor="#292929" FontFamily="PoppinsBold" Grid.Row="2"/>
+                <Label Text="1. O professor, por aproximadamente 20 minutos, deverá expor os principais conceitos do conteúdo que será trabalhado, com o intuito de explicitar os elementos centrais da matéria que será abordada." FontFamily="PoppinsExtraLight" Grid.Row="3"/>
+                <Label Text="2.  O professor apresenta uma questão de múltipla escolha, para que os alunos respondam de acordo com os conhecimentos aprendidos na exposição oral anterior." FontFamily="PoppinsExtraLight" Grid.Row="4"/>
+                <Label Text="3. De modo individual, os alunos devem refletir durante aproximadamente 2 minutos sobre a questão apresentada pelo professor, a fim de escolher uma solução e formulação uma justificativa para sua resposta." FontFamily="PoppinsExtraLight" Grid.Row="5"/>
+            <Label Text="4. Os alunos devem expor, oralmente, suas respostas ao professor." FontFamily="PoppinsExtraLight" Grid.Row="6"/>
+                <Label Text="5. O professor deve avaliar a porcentagem de acertos diante das exposições de respostas, de modo a conduzir com mais praticidade o método. Se a frequência de acertos estiver entre 35% e 70%, o professor deve avançar para etapa 6, e, caso a frequência de acertos estiver maior que 70%, torna-se mais viável que o professor avance para o passo nove. " FontFamily="PoppinsExtraLight" Grid.Row="7"/>
+                <Label Text="6. Os alunos passam a trabalhar coletivamente, discutindo as respostas com seus colegas durante cerca de dois minutos, com o intuito de chegar à resposta correta, podendo mudar de resposta e justificativa de acordo com as instruções dadas pelos seus próprios colegas. " FontFamily="PoppinsExtraLight" Grid.Row="8"/>
+                <Label Text="7. Novamente, os alunos informam suas respostas ao professor acrescido da sua argumentação. " FontFamily="PoppinsExtraLight" Grid.Row="9"/>
+                <Label Text="8. O professor é responsável por fazer um balanço das respostas apresentadas, ao sintetizar a votação de acordo com a questão de múltipla escolha inicialmente fornecida e mediante as argumentações dos seus alunos perante as respostas." FontFamily="PoppinsExtraLight" Grid.Row="10"/>
+                <Label Text="9. O professor explicará a resposta correta da questão, justificando o motivo da alternativa correta a fim de solucionar as dúvidas, principalmente dos pares que não acertaram na votação. Além disso, nesta etapa é possível apresentar outra questão a depende do tempo disponível de aula, ou mesmo caminhar para a finalização dela.sso nove. " FontFamily="PoppinsExtraLight" Grid.Row="11"/>
+            </Grid>
+    </StackLayout>
+        </ScrollView>
+</ContentPage>
